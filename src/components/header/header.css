@@ -1,0 +1,335 @@
+
+
+.header-m-cont{
+    display: grid;
+   justify-content: space-evenly;
+   margin: auto 10%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.header-content-cont{
+    margin: 0 auto;
+    margin-top: 20%;
+
+    justify-content: center;
+ 
+}
+
+.header-content-cont h1{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(37, 37, 37);
+}
+
+.header-content-cont h4{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100px;
+    color: rgb(87, 87, 87);
+    margin-top: 10px;
+   
+}
+
+.img-holder-cont{
+   
+    height: 350px;
+    width: 350px;
+    margin: 10%;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 60% 30% 70% 40% / 60% 40% 30% 70%;
+    }
+}
+
+.header-btn-wrapper{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-hire h4{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.btn-hire{
+    height: 35px;
+    width: 100px; 
+    align-content: center; 
+    justify-content: center;
+    margin: auto 0px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color:  rgb(91, 91, 91);
+    color: white;
+    transition: 1s all;
+}
+
+
+.btn-hire:hover{
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    background-color:  white;
+    color:  rgb(91, 91, 91);
+}
+
+
+
+.react_icon_holder{
+    display: block;
+justify-content: center;
+align-items: center;
+padding-top: 5px;
+}
+.react-icons-header{
+    color:white;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background:  rgb(91, 91, 91);;
+    padding: 0.4rem;
+    border-radius: 10px;
+    transition: 0.4s ease-in;
+}
+
+.react-icons-header:hover{
+    border: 2px solid  rgb(91, 91, 91);;
+    background: transparent;
+    color:  rgb(91, 91, 91);;
+}
+
+
+
+/* name animation start */
+.animated_container{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+    min-width: 190px;
+}
+
+.animated_container span{
+    position: relative;
+}
+
+.animated_container span::before{
+    content: 'Godwin A. Chukwudi';
+    font-size: 30px;
+   
+   
+}
+
+.animated_container span::after{
+
+    content: '';
+    position: absolute;
+    width: calc(100% + 7px);
+    height: 50px;
+    background-color: var(--app-bg-color);;
+    border-left: 2px solid gray;
+    right: 0;
+    animation: cursor .8s infinite, typing 30s steps(18) infinite;
+}
+
+@keyframes cursor {
+ to{ 
+    border-left: 2px solid var(--app-bg-color);;
+ }
+}
+
+@keyframes typing {
+  10%, 15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+       width: calc(100% + 8px);
+  }
+   }
+/* name animation end */
+
+
+/* skill contentes start */
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+ 
+.skills_icons_Container{
+    display: flex;
+    width: 40%;
+    padding: 1rem;
+    margin: auto;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.react-icons-skill{
+    
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    transition: 0.4s ease-out;
+}
+
+.react-icons-skill:hover{
+    
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transform: scale(2);
+}
+
+.skill-h2{
+    justify-content: center;
+    margin: auto 0px;
+    padding-bottom: 1rem;
+}
+
+.skill-h2 h2{
+    color: rgb(91, 91, 91);
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.flutter{
+    color: #027DFD;
+}
+
+.html{
+    color: #e34c26;
+}
+
+.react{
+    color:#61DBFB;
+}
+
+.java{
+    color: #F0DB4F;
+}
+
+.laravel{
+    color: #F05340;
+}
+
+
+/* skill contentes end*/
+
+@media screen and (max-width:768px){
+
+    .header-content-cont {
+        margin-top: 70px;
+        height: 200px;
+        padding: 0;
+       
+    }
+
+    .header-content-cont h1{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+
+    .header-m-cont{
+        column-gap:0.5rem
+    }
+
+    .animated_container span::before{
+
+        font-size: 22px;
+    }
+
+    .animated_container span::after{
+        height: 20px;
+        padding-top: 20px;
+    }
+    .img-holder-cont{
+        height: 250px;
+        width: 250px;
+    }
+
+}
+@media screen and (max-width:600px){
+
+    .header-m-cont{
+      grid-template-columns: 1fr;
+      gap: 0px;
+    
+    }
+    
+
+    .header-content-cont{
+        width: 100%;
+        justify-content: center;
+        margin-top: 5%;
+        padding: 0px;
+        text-align: center;
+    }
+     
+    .img-holder-cont{
+        padding: 0px;
+        margin: 0;
+    }
+
+    .header-content-cont h1 {
+    font-size: 24px;
+    text-align: center;
+    
+    
+    }
+    
+   .img-holder-cont{
+    order: -1;
+   }
+
+    .skills_icons_Container{
+        width: 100%;
+        margin: auto  ;
+        
+    }
+
+    .header-content-cont h4{
+        text-align: center;
+    }
+
+    .header-btn-wrapper{
+        padding:  0px 20%;
+    }
+
+    .animated_container{
+        font-size: 25px;
+    }
+
+    .img-holder-cont{
+        height: 300px;
+        width:  300px;  
+        margin: 10% 0px  ;
+    }
+
+    .react-icons-header{
+        margin: 5px;
+    }
+
+   }
