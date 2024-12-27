@@ -31,7 +31,6 @@ const header = (props) => {
                   <span></span>
               </div>
           <h1>APP/WEB DEVELOPER</h1>
-          Native App and Web with astonishing User interface 
               
                {/* <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis neque incidunt .</h4> */}
                <h4>  Native App and Web with Astonishing User interface, with loads of experience packed into any.</h4>
